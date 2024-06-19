@@ -1,519 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poetsen+One&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poetsen+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&family=Big+Shoulders+Text:wght@100..900&family=BioRhyme:wght@200..800&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Kreon:wght@300..700&family=Noto+Serif+Khmer:wght@100..900&family=Pacifico&family=Phudu:wght@300..900&family=Poetsen+One&family=Signika+Negative:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&family=Big+Shoulders+Text:wght@100..900&family=BioRhyme:wght@200..800&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Kreon:wght@300..700&family=Noto+Serif+Khmer:wght@100..900&family=Pacifico&family=Phudu:wght@300..900&family=Poetsen+One&family=Signika+Negative:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-header {
-    /* position: fixed;
+/*header {
+  /* position: fixed;
     top: 0;
-    z-index: 2; */
-}
+    z-index: 2; 
+}*/
 
 nav {
-    background-color: #bb1655;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    align-items: center;
-    gap: 4em;
+  background-color: #bb1655;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  gap: 4em;
 }
 nav a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(240, 195, 70);
-    font-size: 1.4rem;
-    margin-top: 2em;
-    padding-top: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  color: rgb(240, 195, 70) !important;
+  font-size: 1.4rem;
+  margin-top: 2em;
+  padding-top: 1em;
 }
 
 nav a:hover {
-    color: white;
-    /* text-decoration: underline; */
-    font-weight: 700;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
+  color: white !important;
+  /* text-decoration: underline; */
+  font-weight: 700;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
 }
 
-.nav-secundario h3{
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 26pt;
-    color: #feefde;
-    margin-top: 58px;
-    margin-left: -62px;
+.nav-secundario h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26pt;
+  color: #feefde;
+  margin-top: 58px;
+  margin-left: -62px;
+}
+
+.nav-secundario a {
+  font-family: "Pacifico", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26pt;
+  color: #feefde !important;
+  margin-top: 58px !important;
+  margin-left: -62px;
+  text-decoration: none !important;
+}
+
+.nav-secundario img {
+  width: 150px;
+  padding-top: 6px;
+  margin-left: 60px;
+  flex-shrink: 2;
+  /* object-fit: fill; */
 }
 
 
 body {
-    background-color: #FB8B24;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    
+  background-color: #fb8b24;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .footer {
-    width: 100%;
-    position: relative;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    background-color: #070617;
-  }
-  .footer .col {
-    width: 280px;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 90px;
-    justify-content: center;
-  }
-  .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.9em;
-    line-height: 35px;
-    padding: 10px 0px 5px 0px;
-    color: rgba(231, 44, 106, 0.685);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-  }
-  .footer .col ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   
-  }
-  .footer .col ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-  }
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  background-color: #070617;
+}
+.footer .col {
+  width: 280px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 90px;
+  justify-content: center;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  line-height: 35px;
+  padding: 10px 0px 5px 0px;
+  color: rgba(231, 44, 106, 0.685);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
 
-  .social ul {
-    display: flex;
-    gap: 10px;
-    flex-direction: row !important;
-    padding-right: 5px !important;
-  }
+.social ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: row !important;
+  padding-right: 5px !important;
+}
 
-  .social ul li {
-    display: flex;
-    flex-direction: row !important;
-    padding-right: 5px !important;
-  }
-  
-  .footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-  }
+.social ul li {
+  display: flex;
+  flex-direction: row !important;
+  padding-right: 5px !important;
+}
 
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
 
 h1 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 110pt;
-    color: #feefde;
-    line-height: 0.2;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110pt;
+  color: #feefde;
+  line-height: 0.2;
 }
 h2 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 98pt;
-    color: #f1cf61;
-    margin-top: -80px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 98pt;
+  color: #f1cf61;
+  margin-top: -80px;
 }
 
-p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(90, 83, 63);
-    font-size: 2rem;
-}
 
-.parrafo-1{
-    font-family: sans-serif; /*serif/monospace/cursive*/
-    text-align: right;
+.parrafo-1 {
+  font-family: sans-serif; /*serif/monospace/cursive*/
+  text-align: right;
 }
 #seccion-3 p {
-    color: brown !important;
+  color: brown !important;
 }
-
-
 
 .lista-ingredientes {
-    list-style-type:unset;
+  list-style-type: unset;
 }
 
-
 .section-style {
-    background-image: url("../assets/img/band-top-v2.svg");
-    background-repeat: no-repeat;
-    /* display: flex;
+  background-image: url("../assets/img/band-top-v2.svg");
+  background-repeat: no-repeat;
+  /* display: flex;
     position: absolute;
     z-index: 0; */
 }
 
-
-
 .main-container {
-    /* background-color: #FB8B24; */
-    height: 820px; 
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    padding-top: 3%;
-    padding-left: 10%;
-    justify-content: center;
-    z-index: 0;
-    /* background-image: url("../assets/img/band-top-v2.svg"); */
-    }
+  /* background-color: #FB8B24; */
+  height: 820px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding-top: 3%;
+  padding-left: 10%;
+  justify-content: center;
+  z-index: 0;
+  /* background-image: url("../assets/img/band-top-v2.svg"); */
+}
 
 .backgroung-image-top img {
-        display: flex;
-        position: relative;
-        z-index: 0 !important;
-        
-    }
-
+  display: flex;
+  position: relative;
+  z-index: 0 !important;
+}
 
 .main-heading {
-        width: 550px;
-        /* background-color: #FB8B24; */
-        display: flex;
-        gap: 0em;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        position: relative;
-        margin-top: 4vh;
-        padding-top: 180px;
-        margin-right: 30px;
-    
-    }
+  width: 550px;
+  /* background-color: #FB8B24; */
+  display: flex;
+  gap: 0em;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 4vh;
+  padding-top: 180px;
+  margin-right: 30px;
+}
 
 .title-1-intro h1 {
-    position: relative;
+  position: relative;
 }
 
 .title-2-intro h2 {
-    position: relative;
-    margin-top: -500px;
+  position: relative;
+  margin-top: -500px;
 }
 
 .main-heading p {
-    position: relative;
-    margin-top: -140px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(90, 83, 63);
+  font-size: 2rem !important;
+  position: relative;
+  margin-top: -140px;
 }
-
-
 
 .logo-img-intro img {
-        /* width: 80vw; */
-        padding-left: 20px;
-        width: 650px;
-          
+  /* width: 80vw; */
+  padding-left: 20px;
+  width: 650px;
 }
 
-.logo-img-nav{
- 
-    /* display: flex;
-    position: relative;  */
-}
+/*.logo-img-nav {
+   display: flex;
+    position: relative; 
+}*/
 
 
-.nav-secundario img {
-    width: 180px;
-    padding-top: 20px;
-    margin-left: 60px;
-    flex-shrink: 2;
-    /* object-fit: fill; */
-}
 
-
-  /*---------------------------------------
+/*---------------------------------------
   RECETARIO             
 -----------------------------------------*/
 
 #container-section-recetario {
-    padding-top: 200px;
-    width: 100%;
-    min-height: 100vh;
-    margin-bottom: 50px;
+  padding-top: 200px;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 50px;
+}
 
+/*clases buscador*/
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 16% !important;
 }
 
 .container-box-receta {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* align-items: center; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
 }
 
 .box-receta {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #e7dede;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 24px;
-    padding: 30px;
-    border-radius: 30px;
-    height: min-content;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e7dede;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 30px;
+  border-radius: 30px;
+  height: min-content;
 }
 
 .receta-info {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .receta-info p {
-    padding-top: 15px;
-    margin-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .services-image-wrap {
-    width: 250px;
+  width: 250px;
 }
 
 .services-image-wrap img {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .description-receta {
-    width: 200px;
+  width: 200px;
 }
 
-
 .description-receta p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
 }
 
 .description-receta a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
-  }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
 
 .services-image-wrap img {
-   width: 250px;
-  }
+  width: 250px;
+}
 
-  
-  .receta-title-link {
-    display: block;
-  }
+.receta-title-link {
+  display: block;
+}
 
-
-  /*----efecto boton 
+/*----efecto boton 
 
  Pendiente
 
     fin efect boton */
- 
-  
-  .services-image,
-  .team-image {
-    border-radius: var(--border-radius-small);
-    display: block;
-    aspect-ratio: 1;
-    object-fit: cover;
-    transition: all 0.5s;
-  }
-  
-  .services-image-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-  }
-  
-  .receta-icon-wrap {
-    background: var(--secondary-color);
-    color: var(--white-color);
-    font-size: var(--h3-font-size);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    transition: opacity 0.5s;
-    padding: 8px 12px;
-  }
 
-  .receta-icon-wrap p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-  }
+.services-image,
+.team-image {
+  border-radius: var(--border-radius-small);
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: all 0.5s;
+}
 
-  .title-recetario {
-    margin-bottom: 50px;
-    margin-left: 50px;
-    padding-top: 50px;
-  }
+.services-image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
 
-  .title-recetario h2 {
-    font-size: 3em;
-  }
+.receta-icon-wrap {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  padding: 8px 12px;
+}
 
+.receta-icon-wrap p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
 
-  /* ------ EVENTOS --------*/
+.title-recetario {
+  margin-bottom: 80px;
+  /* margin-left: 50px; */
+  padding-top: 100px;
+}
 
-  .container-section-evento {
-    padding-top: 200px;
-    width: 100%;
-    min-height: 100vh;
-    
-    }
+.title-recetario h2 {
+  font-size: 3em;
+  margin-top: 0px;
+}
 
-    .style-event {
-        height: 680px;
-    }
+/* ------ EVENTOS --------*/
 
+.container-section-evento {
+  padding-top: 200px;
+  width: 100%;
+  min-height: 100vh;
+}
 
-  .section-intro-evento {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    /* position: relative; */
-    /* margin-top: 80px; */
-  }
+.style-event {
+  height: 680px;
+}
 
+.section-intro-evento {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  /* position: relative; */
+  /* margin-top: 80px; */
+}
 
-  .section-video {  
-    width: 40%;
-  }
+.section-video {
+  width: 40%;
+}
 
-  .proximo-evento {
-    width: 40%;
-  }
-  .proximo-evento h2 {
-    font-size: 3em;
-    margin-top: 0px !important;
-  }
-  .proximo-evento p {
-    font-size: 16pt;
-  }
+.proximo-evento {
+  width: 40%;
+}
+.proximo-evento h2 {
+  font-size: 3em;
+  margin-top: 0px !important;
+}
+.proximo-evento p {
+  font-size: 16pt;
+}
 
-  .wrap-calendario {
-    margin-left: 60px;
-  }
+.wrap-calendario {
+  margin-left: 60px;
+}
 
-  .container-calendario {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 150px;
-    width: 90%;
-    padding-bottom: 60px;
-    margin-left: 25px;
-  }
-  
-  .container-calendario thead {
-    background-color: violet;
-  }
+.container-calendario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+  width: 90%;
+  padding-bottom: 60px;
+  margin-left: 25px;
+}
 
-  .container-calendario table {
-    background-color: white;
-    width: 650px;
-  }
+.container-calendario thead {
+  background-color: violet;
+}
 
-  .container-calendario h2 {
-    font-size: 3em;
-  }
+.container-calendario table {
+  background-color: white;
+  width: 650px;
+}
 
-  .description-calendario {
-    width: 40%;
-  }
+.container-calendario h2 {
+  font-size: 3em;
+}
 
-  .description-calendario p {
-    font-size: 16pt;
-  }
+.description-calendario {
+  width: 40%;
+}
 
-  /*----Seccion CONTACTO ---- */
+.description-calendario p {
+  font-size: 16pt;
+}
 
-.main-form-container {
-    width: 80%;
-    height: 800px;
-    margin-top: 250px;
-    margin-left: 90px;
+/* Testimonial CSS Code Start */
+/* background */
+.carousel-bg {
+  background-color: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* quote */
+.quote-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 60px;
+  width: 80px;
+}
+/* text-style */
+.testimonial-style .testimonial-caption-style {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  color: #354052;
+  line-height: 30px;
+  bottom: 40%;
+  text-shadow: none;
+  top: 10%;
+}
+.testimonial-style .testimonial-authors {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #354052;
+  line-height: 30px;
+  margin-top: 40px;
+}
+/* carousel-height-control */
+.testimonial-style .carousel-inner > .item {
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 380px;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control {
+  color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+  color: #354052;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+/* indicators */
+.testimonial-style .carousel-indicators .active {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.testimonial-style .carousel-indicators li {
+  border: 2px solid #354052;
+  background-color: #354052;
 }
 
 
- /*----Seccion CONTACTO ---- */
-  
- .main-donde-comer {
-    width: 80%;
-    height: 800px;
-    margin-top: 250px;
-    margin-left: 90px;
+/* ----- Seccion COMER AFUERA ------*/
+
+.carousel-indicators {
+  position: unset;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+.carousel-indicators [data-bs-target] {
+  text-indent: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel-indicators [data-bs-target].active {
+  color: darkgoldenrod;
+}
+.carousel {
+  background-color: beige;
+}
+.carousel-inner img {
+  max-height: 400px;
+  max-width: 100%;
+  padding: 1em;
+  margin: auto;
+}
+@media screen and (min-width: 576px) {
+  .carousel {
+    padding: 2em;
+    font-size: 1.3em;
+  }
+}
+
+/*----Seccion CONTACTO ---- */
+
+.main-form-container {
+  width: 100%;
+  height: 800px;
+  margin: 3%;
+}
+
+/*----Seccion CONTACTO ---- */
+
+.main-donde-comer {
+  width: 80%;
+  height: 800px;
+  margin-top: 250px;
+  margin-left: 90px;
 }
 
 .description-donde-comer {
-    width: 66%;
-    margin-bottom: 50px ;
+  width: 66%;
+  margin-bottom: 50px;
 }
 
-.description-donde-comer h2{
-    font-size: 3em;
+.description-donde-comer h2 {
+  font-size: 3em;
 }
 
-.description-donde-comer p{
-    font-size: 16pt;
+.description-donde-comer p {
+  font-size: 16pt;
 }
 
 .main-donde-comer h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(90, 83, 63);
-    font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(90, 83, 63);
+  font-size: 2rem;
 }
 
 .main-donde-comer li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(90, 83, 63);
-    font-size: 16pt;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(90, 83, 63);
+  font-size: 16pt;
 }
+
+
+#form-header{
+    margin-top:5%;
+    text-align:center;
+  }
+  
+  #form-tagline{
+    background: #ff6d00;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    color:#ffffff;
+    margin-top:5%;
+    padding: 4%;
+    text-align:left;
+  }
+  
+  #form-tagline .fa{
+    margin-bottom:15%;
+  }
+  
+  #form-tagline h2 {
+    margin-bottom:15%;
+  }
+  
+  #form-content{
+    background: #f4f4f4;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius:0.5rem;
+    margin-top:5%;
+    padding: 3%;
+  }
+  
+  .form-group{
+    margin-top:5%;
+  }
+  
+  .contact{
+    padding: 4%;
+    height: 400px;
+  }
+  
+  .control-label{
+    font-size:16px;
+    font-weight:600;
+  }
+  
+  div .submit-button{
+    margin-top:3%;
+    text-align:right;
+  }
+  
+  button#submit{
+    white-space: normal;
+    width:auto;
+    background: #ff6d00;
+    color: #ffffff;
+    font-weight: 600;
+    width: 25%;
+  }
+
+  .lead{
+    color: #070617 !important;
+  }
