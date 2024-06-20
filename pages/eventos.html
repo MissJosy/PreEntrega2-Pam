@@ -4,44 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TACC Busters</title>
-    <link rel="shortcut icon" href="../assets/img/tacc-busters-loguito.png" type="image/x-icon">
-      <!-- Bootstrap CSS -->
-      <link
+    <link
+      rel="shortcut icon"
+      href="../assets/img/tacc-busters-loguito.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-   <link rel="stylesheet" href="../css/main.css">
-   
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   </head>
   <body>
     <header>
-      <!-- <nav class="nav-secundario">
-        <div class="logo-img-nav">
-          <a href="../index.html"
-            ><img
-              src="../assets/img/tacc-busters-loguito.png"
-              alt="Logo intro TACC busters"
-          /></a>
-        </div>
-        <h3>T.A.C.C. busters</h3>
-        <a href="../pages/recetario.html">Recetario</a>
-        <a href="#">Eventos y ferias</a>
-        <a href="../pages/comer-afuera.html">Comer afuera</a>
-        <a href="../pages/contacto.html">Contacto</a>
-      </nav> -->
+<!--     Esta página de "Eventos y ferias" está repetida tanto en eventos próximos y eventos pasados, probablemente quite el botón colapsable del nav de eventos pasados, y cree otra sección en la misma página de eventos próximos mencionando los últimos eventos.
+  
+Navbar en Bootstrap, funciona pero el menu hamburguesa no se ve muy bien, a rever -->
+
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <!-- <div class="container col-lg-3 logo-img-nav">
-          <a href="../index.html"
-            ><img
-              src="../assets/img/tacc-busters-loguito.png"
-              alt="Logo intro TACC busters"
-          />T.A.C.C. busters</a>
-        </div> -->
-        <!-- <h3>T.A.C.C. busters</h3> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -69,7 +65,7 @@
             >
           </div>
 
-          <ul class="navbar-nav pt-5">
+          <ul class="navbar-nav pt-lg-5">
             <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li> -->
@@ -113,52 +109,16 @@
         </div>
       </nav>
     </header>
-
-    <section class="container carousel-bg">
-			<!-- Quote Image -->
-			<div>
-			  <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
-			</div>
-			<!-- Carousel Start below -->
-			<div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				<li data-target="#carousel1" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel1" data-slide-to="1"></li>
-				<li data-target="#carousel1" data-slide-to="2"></li>
-			  </ol>
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-				<div class="item active">
-				  <div class="carousel-caption testimonial-caption-style">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-					<p class="testimonial-authors">Person 1</p>
-				  </div>
-				</div>
-				<div class="item">
-				  <div class="carousel-caption testimonial-caption-style">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-					<p class="testimonial-authors">Person 2</p>
-				  </div>
-				</div>
-				<div class="item">
-				  <div class="carousel-caption testimonial-caption-style">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-					<p class="testimonial-authors">Person 3</p>
-				  </div>
-				</div>
-			  </div>
-		  
-			  <!-- Controls -->
-		  
-			  <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-			  <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-			</div>
-		</section>
-
-    <section class="section-style style-event">
-      <div class="section-intro-evento container-section-evento">
-        <div class="section-video">
+<!-- uso de Bootstrap en esta sección, seguiré ajustando para que el diseño entre páginas sea un poco mas consistente, entre ello el ancho de los contenedores, homogeneizar las fuentes... -->
+<section class="section-style">
+    <div class="container bg-white mt-md-5 rounded style-event">
+      <div class="d-flex flex-row section-intro-evento container-section-evento">
+        
+        <div class="col-md-6 mb-3 section-video">
+          <h1>Próximos eventos</h1>
+          <p>
+            Eventos para compartir e informar sobre la condición celíaca, así como ferias gastronómicas dedicadas o aptas para celíacos
+          </p>
           <iframe
             width="680"
             height="450"
@@ -171,108 +131,258 @@
           ></iframe>
         </div>
 
-        <div class="proximo-evento">
-          <h2>Próximos eventos</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            officiis placeat corporis vitae eligendi dolores deserunt, earum
-            quibusdam quaerat, rem natus nisi asperiores voluptates quasi
-            aliquid blanditiis praesentium tempore. Similique sint tempore fuga
-            cumque provident facilis molestiae illo nam debitis.
-          </p>
+        <div id="proximo-evento" class="col-md-6 col-sm-12">
+          <div class="calendar-container rounded">
+            <div class="calendar-container__header">
+              <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
+                <i class="icon ion-ios-arrow-back"></i>
+              </button>
+              <h2 class="calendar-container__title">Junio 2024</h2>
+              <button class="calendar-container__btn calendar-container__btn--right" title="Next">
+                <i class="icon ion-ios-arrow-forward"></i>
+              </button>
+            </div>
+            <div class="calendar-container__body">
+              <div class="calendar-table">
+                <div class="calendar-table__header">
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col">D</div>
+                    <div class="calendar-table__col">L</div>
+                    <div class="calendar-table__col">M</div>
+                    <div class="calendar-table__col">M</div>
+                    <div class="calendar-table__col">J</div>
+                    <div class="calendar-table__col">V</div>
+                    <div class="calendar-table__col">S</div>
+                  </div>
+                </div>
+                <div class="calendar-table__body">
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col calendar-table__inactive">
+                      <div class="calendar-table__item">
+                        <span>30</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__today">
+                      <div class="calendar-table__item">
+                        <span>1</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>3</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>4</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event">
+                      <div class="calendar-table__item">
+                        <span>5</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>6</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col calendar-table__event">
+                      <div class="calendar-table__item">
+                        <span>7</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>8</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>9</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>10</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>11</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>12</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>13</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>14</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>15</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                      <div class="calendar-table__item">
+                        <span>16</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event calendar-table__event--long">
+                      <div class="calendar-table__item">
+                        <span>17</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                      <div class="calendar-table__item">
+                        <span>18</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>19</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>21</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>22</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>23</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>24</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>25</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>26</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                      <div class="calendar-table__item">
+                        <span>27</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar-table__row">
+                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                      <div class="calendar-table__item">
+                        <span>28</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>29</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>30</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col">
+                      <div class="calendar-table__item">
+                        <span>31</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__event calendar-table__inactive">
+                      <div class="calendar-table__item">
+                        <span>1</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__inactive">
+                      <div class="calendar-table__item">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="calendar-table__col calendar-table__inactive">
+                      <div class="calendar-table__item">
+                        <span>3</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events-container">
+            <span class="events__title">Eventos del mes</span>
+            <ul class="events__list">
+              <li class="events__item">
+                <div class="events__item--left">
+                  <span class="events__name">Charla sobre celiaquía y restricciones</span>
+                  <span class="events__date">Junio 5</span>
+                </div>
+                <span class="events__tag">16:00</span>
+              </li>
+              <li class="events__item">
+                <div class="events__item--left">
+                  <span class="events__name">Taller de bizcochos sin TACC</span>
+                  <span class="events__date">Junio 7</span>
+                </div>
+                <span class="events__tag">10:00</span>
+              </li>
+              <li class="events__item">
+                <div class="events__item--left">
+                  <span class="events__name">Expo celiferia</span>
+                  <span class="events__date">Junio 16 - 18</span>
+                </div>
+                <span class="events__tag events__tag--highlighted">All day</span>
+              </li>
+              <li class="events__item">
+                <div class="events__item--left">
+                  <span class="events__name">Taller de repostería</span>
+                  <span class="events__date">Junio 27 - 28</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
     </section>
 
-    <section class="container-calendario">
-      <div class="description-calendario">
-        <h2>Save the date</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          officiis placeat corporis vitae eligendi dolores deserunt, earum
-          quibusdam quaerat, rem natus nisi asperiores voluptates quasi aliquid
-          blanditiis praesentium tempore.
-        </p>
-      </div>
-      <div class="wrap-calendario">
-        <h2>Agosto 2024</h2>
-        <br />
-
-        <table cellspacing="21" cellpadding="21">
-          <caption align="top"></caption>
-
-          <thead>
-            <tr>
-              <th>Sun</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Wed</th>
-              <th>Thur</th>
-              <th>Fri</th>
-              <th>Sat</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr></tr>
-            <tr>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-              <td>21</td>
-              <td>22</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>29</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>31</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+  
 
     <footer>
       <div class="footer">
@@ -330,11 +440,22 @@
       <!-- END OF FOOTER -->
     </footer>
 
-   
-   <!-- jQuery, Popper.js, Bootstrap JS -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
 
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

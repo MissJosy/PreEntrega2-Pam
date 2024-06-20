@@ -20,6 +20,9 @@ a {
     top: 0;
     z-index: 2; 
 }*/
+.navbar {
+  z-index: 2;
+}
 
 nav {
   background-color: #bb1655;
@@ -78,6 +81,30 @@ nav a:hover {
   /* object-fit: fill; */
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  /* padding: .5rem 0; */
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  /* color: #212529; */
+  text-align: left;
+  list-style: none;
+  background-color: rgb(171, 18, 77, .6);
+  background-clip: padding-box;
+  /* border: 1px solid rgba(0, 0, 0, .15); */
+  border-radius: .25rem;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+ background-color: #ab124d;
+}
 
 body {
   background-color: #fb8b24;
@@ -190,6 +217,8 @@ h2 {
 .section-style {
   background-image: url("../assets/img/band-top-v2.svg");
   background-repeat: no-repeat;
+  margin-top: -50px;
+  padding-top: 60px;
   /* display: flex;
     position: absolute;
     z-index: 0; */
@@ -241,7 +270,19 @@ h2 {
   color: rgb(90, 83, 63);
   font-size: 2rem !important;
   position: relative;
-  margin-top: -140px;
+  /* margin-top: -140px; */
+}
+@media only screen and (min-width: 768px) {
+  .main-heading p {
+    margin-top: -140px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-container {
+    /* background-color: #FB8B24; */
+    height: 1200px;
+}
 }
 
 .logo-img-intro img {
@@ -268,13 +309,35 @@ h2 {
   margin-bottom: 50px;
 }
 
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #e60488 !important;
+  border-color: #fc2be0 !important;
+}
+
+.btn-primary :focus{
+  box-shadow: 0 0 0 .25rem rgba(252, 122, 29, 0.767) !important;
+}
+
+/* .card-deck {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;
+}  
+
+.card {
+  flex: 1 0 auto !important;
+} */
+
 /*clases buscador*/
 .input-group {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 16% !important;
+  width: 240px;
 }
 
 .container-box-receta {
@@ -387,21 +450,26 @@ h2 {
   padding-top: 100px;
 }
 
-.title-recetario h2 {
+.title-recetario h1 {
   font-size: 3em;
   margin-top: 0px;
+  color: #f1cf61;
 }
 
 /* ------ EVENTOS --------*/
 
+
 .container-section-evento {
-  padding-top: 200px;
+  padding-top: 80px;
   width: 100%;
   min-height: 100vh;
+  
 }
 
+
 .style-event {
-  height: 680px;
+  height: auto;
+  margin-bottom: 3%;
 }
 
 .section-intro-evento {
@@ -410,22 +478,37 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  /* position: relative; */
-  /* margin-top: 80px; */
+  position: relative;
+  margin-top: 100px;
 }
 
 .section-video {
-  width: 40%;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.proximo-evento {
-  width: 40%;
+.section-video h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #f1cf61;
+  font-size: 3em !important;
+  margin-bottom: 35px !important;
 }
-.proximo-evento h2 {
+
+#proximo-evento {
+  /* width: 40%; */
+  background-color: #fff;
+}
+
+
+
+#proximo-evento h2 {
   font-size: 3em;
   margin-top: 0px !important;
 }
-.proximo-evento p {
+#proximo-evento p {
   font-size: 16pt;
 }
 
@@ -467,73 +550,277 @@ h2 {
 
 /* Testimonial CSS Code Start */
 /* background */
-.carousel-bg {
-  background-color: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
+#proximo-evento .mock-up-link {
+  display: none;
 }
-/* quote */
-.quote-image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  padding-top: 60px;
+ @media (min-width: 768px) {
+  #proximo-evento .mock-up-link {
+    display: block;
+  }
+}
+
+#proximo-evento .main-container-wrapper {
+  background-color: #f8fafa;
+  min-width: 320px;
+  min-height: 568px;
+  max-width: 414px;
+  overflow-y: auto;
+}
+@media (min-width: 415px) {
+  #proximo-evento .main-container-wrapper {
+    -moz-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
+    -webkit-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
+    box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
+    margin: 24px auto;
+  }
+}
+
+#proximo-evento header {
+  background-color: #fff;
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+#proximo-evento .header__btn {
+  background-color: #ffc107;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 80px;
+  padding-top: 18px;
+  position: absolute;
+  top: -25px;
   width: 80px;
 }
-/* text-style */
-.testimonial-style .testimonial-caption-style {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 24px;
-  color: #354052;
-  line-height: 30px;
-  bottom: 40%;
-  text-shadow: none;
-  top: 10%;
+#proximo-evento .header__btn:hover, .header__btn:focus {
+  background: #ffc107;
+  transition: all 0.3s ease-in;
+  outline: none;
 }
-.testimonial-style .testimonial-authors {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 20px;
-  color: #354052;
-  line-height: 30px;
-  margin-top: 40px;
+#proximo-evento .header__btn .icon {
+  display: inline-block;
 }
-/* carousel-height-control */
-.testimonial-style .carousel-inner > .item {
-  padding-top: auto;
-  padding-bottom: auto;
-  height: 380px;
+#proximo-evento .header__btn--left {
+  left: -25px;
+  padding-left: 38px;
+  text-align: left;
 }
-/* carousel-left-right-control */
-.testimonial-style .carousel-control.left {
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
+#proximo-evento .header__btn--right {
+  padding-right: 32px;
+  right: -25px;
+  text-align: right;
 }
-.testimonial-style .carousel-control.right {
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.testimonial-style .carousel-control {
-  color: #354052;
-}
-.testimonial-style .carousel-control:hover {
-  color: #354052;
-  text-decoration: none;
-  transition: background-color 1s ease;
-}
-/* indicators */
-.testimonial-style .carousel-indicators .active {
+
+#proximo-evento .calendar-container {
   background-color: #fff;
-  width: 14px;
-  height: 14px;
-  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  padding: 16px;
+  margin-bottom: 24px;
 }
-.testimonial-style .carousel-indicators li {
-  border: 2px solid #354052;
-  background-color: #354052;
+#proximo-evento .calendar-container__header {
+  display: flex;
+  justify-content: space-between;
+}
+#proximo-evento .calendar-container__btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  color: #e9e8e8;
+}
+#proximo-evento .calendar-container__btn:hover, .calendar-container__btn:focus {
+  color: #9faab7;
+  transition: all 0.3s ease-in;
+}
+#proximo-evento .calendar-container__title {
+  color: #222741;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#proximo-evento .calendar-table {
+  margin-top: 12px;
+  width: 100%;
+}
+#proximo-evento .calendar-table__item {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: #d30a7f;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#proximo-evento .calendar-table__item:hover {
+  background: #f8fafa;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.2s all ease-in;
+}
+#proximo-evento .calendar-table__row {
+  display: flex;
+  justify-content: center;
+}
+#proximo-evento .calendar-table__header {
+  border-bottom: 2px solid #f2f6f8;
+  margin-bottom: 4px;
+}
+#proximo-evento .calendar-table__header .calendar-table__col {
+  display: inline-block;
+  color: #99a4ae;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 12px 3px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40px;
+  height: 38px;
+}
+@media (min-width: 360px) {
+  #proximo-evento .calendar-table__header .calendar-table__col {
+    width: 46px;
+  }
+}
+@media (min-width: 410px) {
+  #proximo-evento .calendar-table__header .calendar-table__col {
+    width: 54px;
+  }
+}
+#proximo-evento .calendar-table__body .calendar-table__col {
+  width: 40px;
+  height: 42px;
+  padding-bottom: 2px;
+}
+@media (min-width: 360px) {
+  #proximo-evento .calendar-table__body .calendar-table__col {
+    width: 46px;
+    height: 48px;
+  }
+}
+@media (min-width: 410px) {
+  #proximo-evento .calendar-table__body .calendar-table__col {
+    width: 54px;
+    height: 56px;
+  }
+}
+#proximo-evento .calendar-table__today .calendar-table__item {
+  border-color: #fefefe;
+  background-color: #f2f6f8;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#proximo-evento .calendar-table__event .calendar-table__item {
+  background-color: #ffa601;
+  border-color: #fefefe;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+#proximo-evento .calendar-table__event--long {
+  overflow-x: hidden;
+}
+#proximo-evento .calendar-table__event--long .calendar-table__item {
+  border-radius: 0;
+  border-width: 2px 0;
+}
+#proximo-evento .calendar-table__event--start .calendar-table__item {
+  border-left: 2px solid #fff;
+  border-radius: 50% 0 0 50%;
+}
+#proximo-evento .calendar-table__event--start.calendar-table__col:last-child .calendar-table__item {
+  border-width: 2px;
+}
+#proximo-evento .calendar-table__event--end .calendar-table__item {
+  border-right: 2px solid #fff;
+  border-radius: 0 50% 50% 0;
+}
+#proximo-evento .calendar-table__event--end.calendar-table__col:first-child .calendar-table__item {
+  border-width: 2px;
+}
+#proximo-evento .calendar-table__inactive .calendar-table__item {
+  color: #dcdce3;
+  cursor: default;
+}
+.calendar-table__inactive .calendar-table__item:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.calendar-table__inactive.calendar-table__event .calendar-table__item {
+  color: #fff;
+  opacity: 0.25;
+}
+.calendar-table__inactive.calendar-table__event .calendar-table__item:hover {
+  background: #66dcec;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#proximo-evento .events-container {
+  padding: 0 15px;
+}
+
+#proximo-evento .events__title {
+  color: #bec1ca;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+#proximo-evento .events__tag {
+  background: #fd7e14;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  width: 60px;
+  margin-left: 16px;
+  padding: 5px 2px;
+  text-align: center;
+}
+#proximo-evento .events__tag--highlighted {
+  background: #fdca40;
+}
+#proximo-evento .events__item {
+  background: #fff;
+  border-left: 8px solid #fd7e14;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  padding: 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+#proximo-evento .events__item--left {
+  width: calc(100% - 76px);
+}
+#proximo-evento .events__name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #222741;
+  display: block;
+  margin-bottom: 6px;
+}
+#proximo-evento .events__date {
+  font-size: 12px;
+  color: #9faab7;
+  display: inline-block;
 }
 
 
@@ -563,6 +850,7 @@ h2 {
 }
 .carousel {
   background-color: beige;
+  margin-bottom: 30px;
 }
 .carousel-inner img {
   max-height: 400px;
@@ -577,21 +865,22 @@ h2 {
   }
 }
 
-/*----Seccion CONTACTO ---- */
-
-.main-form-container {
-  width: 100%;
-  height: 800px;
-  margin: 3%;
-}
-
-/*----Seccion CONTACTO ---- */
-
 .main-donde-comer {
   width: 80%;
-  height: 800px;
-  margin-top: 250px;
+  height: auto;
+  padding-top: 80px;
   margin-left: 90px;
+}
+
+.main-donde-comer h1 {
+  font-size: 3em;
+  margin-top: 0px;
+  color: #f1cf61;
+  line-height: 2.2;
+}
+
+.main-donde-comer h3 {
+  font-family: "Pacifico", cursive;
 }
 
 .description-donde-comer {
@@ -605,6 +894,7 @@ h2 {
 
 .description-donde-comer p {
   font-size: 16pt;
+  color: #ebe9d8;
 }
 
 .main-donde-comer h3 {
@@ -617,6 +907,23 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(90, 83, 63);
   font-size: 16pt;
+}
+
+/*----Seccion CONTACTO ---- */
+
+.main-form-container {
+  width: 100%;
+  height: 800px;
+  margin: 3%;
+}
+
+
+#formulario-contacto .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 96% !important;
 }
 
 

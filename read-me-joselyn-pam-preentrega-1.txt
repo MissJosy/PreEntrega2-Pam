@@ -1,8 +1,0 @@
-READ ME
-------------
-
-Buenas Gerardo, le dejo por aquí unos comments respecto a la entrega:
-
-No pude desarrollar apropiadamente todas las páginas. Cuando navegue por las páginas, para volver al home es clickeando sobre el loguito ubicado en el nav. Está medio chancho el código y me di cuenta que probablemente agregué divs y clases extra innecesarios. Estudiaré para simplificarlo sin que pierda la funcionalidad. También he notado que con el flexbox no logré del todo que se viera muy bien en responsive, algo lo respeta. Trabajaré en ello :). Cualquier sugerencia es bienvenida, muchísimas gracias desde ya,
-
-Joselyn 
